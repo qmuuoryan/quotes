@@ -1,13 +1,14 @@
 <div class="container-fluid">
-  <div class="header">
-    <h1>votes on quotes</h1>
+  <div class="jumbotron">
+    <h1>vote on quotes</h1>
   </div>
   <div class="row">
-    <form>
-
+    <form #quoteForm='ngForm'>
       <div class="form-group">
         <label for="description">Quote:</label><br>
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
         <textarea class="form-control" id="description" rows="7" name="quote"  required></textarea>
+
         </div>
 
 
@@ -18,14 +19,15 @@
 
 
               <div class="form-group">
-                      <label for="personSubmitting">submitter:</label><br>
+                      <label for="personSubmitting">submitted by:</label><br>
                       <textarea class="form-control" id="submitter" rows="2"  name="submitter" required></textarea>
                       </div>
 
     </form>
- <button type="Submit" class="btn btn-primary ">submit quote</button><br>
-  </div>
 
+  </div>
+<button type="Submit" class="btn btn-primary btn-sm">publish quote</button>
+<hr>
 
 
 
