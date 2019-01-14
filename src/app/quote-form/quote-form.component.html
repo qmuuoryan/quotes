@@ -3,12 +3,13 @@
     <h1>vote on quotes</h1>
   </div>
   <div class="row">
-    <form #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <!-- <form #quoteForm='ngForm'> -->
       <div class="form-group">
         <label for="description">Quote:</label><br>
         <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
         <textarea class="form-control" id="description" rows="7" name="quote"  required></textarea>
-        
+
 
         </div>
 
