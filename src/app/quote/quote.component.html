@@ -1,9 +1,10 @@
-<app-quote-form></app-quote-form>
 <div class="container">
   <div class="jumbotron">
     <h1>Quotes! Quotes! Quotes!</h1>
-    <h5>sharing one of the greatest quotes</h5>
+    <h5>sharing one of the greatest quotes!!</h5>
   </div>
+
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
 <div class="container">
   <div class="row">
@@ -12,7 +13,10 @@
       </div>
     </div>
   </div>
+<div class="row">
 
+
+</div>
   <ul>
       <div *ngFor='let quote of quotes;let i = index'>
           <li >{{quote.description}}</li>

@@ -1,6 +1,14 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+This project was generated with [Angular CLI] by Ryan Muuo(https://github.com/angular/angular-cli) version 7.1.4.
+# installation requirements
+* internet access
+* install angular cli
+* have a working computer
+
+
+# known bugs
+* there are no bugs at the moment but incase of any comtact me at ryanmuuo91@gmail.com
 
 ## Development server
 

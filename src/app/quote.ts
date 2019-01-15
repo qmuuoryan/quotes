@@ -4,10 +4,10 @@ export class Quote {
     public id:number,
     public name:string,
     public description:string,
-    // public personSubmitting:string,
+    public personSubmitting:string,
     public newDate: Date){
 
-this.showDescription=false
+this.showDescription=false;
     }
 
 }
