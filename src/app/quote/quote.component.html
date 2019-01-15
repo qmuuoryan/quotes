@@ -4,27 +4,27 @@
     <h5>sharing one of the greatest quotes!!</h5>
   </div>
 
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
         <h3>Famous Quotes!</h3>
       </div>
     </div>
   </div>
-<div class="row">
 
-
-</div>
   <ul>
-      <div *ngFor='let quote of quotes;let i = index'>
-          <li >{{quote.description}}</li>
-           <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details><br>
+    <div *ngFor='let quote of quotes;let i = index'>
 
-          <button  (click)='toogleDetails(i)'> Quote Details</button>
+      <li>{{quote.description}}</li>
+        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details><br>
+
+      <button class="btn btn-danger" (click)='toogleDetails(i)'> Quote Details</button><br>
+      <app-vote></app-vote>
 
 
-          <app-quote-details *ngIf="quote.showDescription" [quote]='quote'></app-quote-details>
-      </div>
+    </div>
+
+
   </ul>

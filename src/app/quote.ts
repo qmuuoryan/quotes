@@ -7,7 +7,7 @@ export class Quote {
     public personSubmitting:string,
     public newDate: Date){
 
-this.showDescription=false;
+this.showDescription=false
     }
 
 }
